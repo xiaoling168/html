@@ -1,19 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>结构化网页</title>
     <style>
-        body{
-            background-color: rgb(100, 100, 255);
-            text-align: center;
-          }
-    </style>
+        body {
+            background-color: #f0f0f0; /* 灰色背景 */
+            text-align: center; /* 文本居中对齐 */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
+        /* 页眉样式 */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        /* 菜单样式 */
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* 内容容器样式 */
+        .container {
+            display: flex;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1400px;
+        }
+
+        /* 左侧列样式 */
+        .left-column {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        /* 右侧列样式 */
+        .right-column {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            margin-left: 10px;
+            text-align: left;
+        }
+
+        /* 页脚样式 */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>第一个git网页成功了！</h1>
-    <a href="second.html">点击进入第二个网页</a>
+    <!-- 页眉部分 -->
+    <header>
+        <h1>肖翎的个人网站</h1>
+    </header>
+
+    <!-- 菜单部分 -->
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">关于我们</a>
+        <a href="#">联系我们</a>
+    </nav>
+
+    <!-- 内容部分 -->
+    <div class="container">
+        <div class="left-column">
+            <h2>左侧目录</h2>
+            <p>这里是左侧列的示例内容。</p>
+        </div>
+        <div class="right-column">
+            <h2>右侧内容</h2>
+            <p>这里是右侧列的示例内容。</p>
+        </div>
+    </div>
+
+    <!-- 页脚部分 -->
+    <footer>
+        <p>&copy; 2025 版权所有</p>
+    </footer>
 </body>
 </html>
